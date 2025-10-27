@@ -1,0 +1,1024 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    padding: 15.5px;
+    width: 100%;
+    display: flex;
+    border-bottom: 0.5px solid white;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    font-family: Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+#logo {
+    width: 10rem;
+    padding-left: 13px;
+    padding-top: 10px;
+}
+
+.navbody {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.navbody a {
+    color: white;
+    text-decoration: none;
+}
+
+#Getapp {
+    display: none;
+    background-color: #ccff00;
+    border: none;
+}
+
+.navbody select {
+    color: white;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+}
+
+select option {
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.navbarright {
+    display: flex;
+    gap: 20px;
+    width: 720px;
+    justify-content: end;
+}
+
+.navbarright select {
+    color: white;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.navbarright button {
+    border-radius: 15px;
+    width: 120px;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.navbarright a{
+    display: inline-flex;
+    height: 44px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 36px;
+    background-color: #CCFF00;
+    color: #110E08;
+    font-family:'Capsule Sans Text', sans-serif;
+    font-weight: 600; 
+    padding: 0px 32px;
+    display: none;
+
+}
+
+#login {
+    background-color: black;
+    color: #ccff00;
+    border-color: #ccff00;
+}
+
+#signup {
+    background-color: #ccff00;
+    border: none;
+}
+
+.navbar-toggle {
+    display: none;
+    background: transparent;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.material-symbols-outlined {
+    display: none;
+}
+
+.navbody a:hover,
+.navbody select:hover,
+.navbarright select:hover {
+    color: #ccff00;
+}
+@media screen and (max-width:430px) {
+                .body{
+                    overflow-x: hidden;
+                }
+                
+                .navbody {
+                    display: none;
+
+                }
+                .material-symbols-outlined{
+                    font-size: 110px;  
+                    color: white;
+                    position: relative;
+                    top: 0.6rem;
+                    right: 0.9rem;
+                    display: inline-block;
+                }   
+                
+                #login,#signup{
+                    display: none;
+                }
+                #Getapp{
+                    display: flex;
+                    padding:0;
+                    width: 5rem;
+                    border-radius: 50px;
+                    padding: 0.8rem;
+                    position:absolute;
+                    top:1.2rem; 
+                    left: 60%;
+                    left: 15rem;
+                }
+                #country{
+                    display: none;
+                }
+                #logo{
+                    width: 20rem;
+                }
+                .menu{
+                    height: 5rem;
+                }
+                .material-symbols-outlined{
+                    position: relative;
+                    left: -43rem;
+                }
+            } 
+
+
+/*video1-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.card_1 {
+    position: relative;
+
+    width: 100%;
+    height: 800px;
+
+
+}
+
+#video1 {
+    width: 100%;
+
+}
+
+#video_1 {
+    display: none;
+}
+ 
+
+    /* image_1------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+    .card_1-content {
+        position: absolute;
+        left: 14rem;
+        top: 8rem;
+        color: #cccccc;
+    }
+
+    .card_1-content h3 {
+        font-size: 22px;
+        line-height: 0;
+        opacity: 0.4;
+        font-family: Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        font-weight: 400;
+    }
+
+    .card_1-content h1 {
+        font-size: 78px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 78px;
+        font-family: Martina Plantijn, serif;
+        font-style: normal;
+        color: #b8a36a;
+        white-space: pre-line;
+    }
+
+    .card_1-content p {
+        font-size: 16px;
+        line-height: 24px;
+        font-family: Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        font-weight: 400;
+        letter-spacing: -0.25px;
+        color: #FFF;
+    }
+
+    .card_1-content h5 {
+        font-family: Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: -0.1px;
+        line-height: 19px;
+        margin: 0;
+        font-style: normal;
+    }
+
+    .card_1-content a {
+        align-items: center;
+        border-radius: 36px;
+        display: inline-flex;
+        height: 44px;
+        padding: 0 32px;
+        position: relative;
+        background-color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        color: #000000;
+        cursor: pointer;
+        text-decoration: none;
+        margin: 30px;
+        left: -2rem;
+    }
+
+   
+    /* image_2------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+    .card_2 {
+        position: relative;
+        width: 100%;
+        height: 850px;
+        background-image: url("https://images.ctfassets.net/ilblxxee70tt/72AW6WOPCImTemmsfDxVFk/276b95a7314a0d484a27f3f51cc47a82/web_homepage_investing_2.jpeg");
+        background-size: cover;
+    }
+
+    .card_2-content {
+        position: absolute;
+        left: 50rem;
+        top: 17rem;
+        color: #FFF;
+    }
+
+    .card_2-content h3 {
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: -1px;
+        line-height: 48px;
+        font-family: Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        color: #CCFF00;
+        margin: 0;
+    }
+
+    .card_2-content h1 {
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: -1px;
+        line-height: 48px;
+        font-family: Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        margin: 0;
+    }
+
+    .card_2-content h6 {
+        font-family: Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .card_2-content a {
+        text-decoration: none;
+        align-items: center;
+        border-radius: 36px;
+        display: inline-flex;
+        height: 44px;
+        justify-content: center;
+        padding: 0 32px;
+        position: relative;
+        background-color: #CCFF00;
+        border: 1px solid #CCFF00;
+        color: #110E08;
+        cursor: pointer;
+        font-family: 'Capsule Sans Text', sans-serif;
+    }
+
+    .card_2-content-bottom p {
+        font-family: Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 19px;
+        margin: 0;
+        position: absolute;
+        top: 30rem;
+    }
+
+    /* image_3------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+    .card_3 {
+        position: relative;
+        width: 100%;
+        height: 950px;
+        background-image: url("https://images.ctfassets.net/ilblxxee70tt/1yBfcc0Y35v8vHS6eUXWMR/5ba2fd65e0cc48044084099e57625f94/web_crypto_hero.jpg");
+        background-size: cover;
+    }
+
+    .card_3-content {
+        position: relative;
+        color: #110E08;
+        text-align: right;
+        top: 16rem;
+        left: 53rem;
+        width: fit-content;
+        height: auto;
+    }
+
+    .card_3-content h1 {
+        text-align: left;
+        font-size: 40px;
+        font-family: Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        font-weight: 400;
+    }
+
+    .card_3-content p {
+        text-align: left;
+        font-size: 16px;
+        font-family: Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        font-weight: 400;
+    }
+
+    .card_3-content a {
+        position: relative;
+        left: -16.5rem;
+        text-decoration: none;
+        display: inline-flex;
+        height: 44px;
+        border-radius: 36px;
+        background-color: #110E08;
+        color: white;
+        text-align: center;
+        padding: 0px 32px;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+        align-items: center;
+        font-family: 'Capsule Sans Text', sans-serif;
+    }
+
+    /* image_4------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+    .card_4 {
+        position: relative;
+        width: 100%;
+        height: 950px;
+        background-image: url("https://images.ctfassets.net/ilblxxee70tt/2IeGSELP82mOWLNZHSE5R5/2dd98fffc51573df6d68de384a175435/RH25_Strategiespromo_wide_homepage_hero.jpeg");
+        background-size: cover;
+    }
+
+    .card_4-content {
+        position: relative;
+        left: 15rem;
+        top: 12rem;
+        color: #cccccc;
+    }
+
+    .card_4-content h1 {
+        font-size: 40px;
+        font-family: Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        color: #FFFFFF;
+        font-weight: 400;
+    }
+
+    .card_4-content p {
+        font-size: 16px;
+        font-family: Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        color: #FFFFFF;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .card_4-content a {
+        text-decoration: none;
+        height: 44px;
+        border-radius: 36px;
+        background-color: #CCFF00;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #110E08;
+        padding: 0px 32px;
+        font-family: 'Capsule Sans Text', sans-serif;
+    }
+
+    .card_5 {
+        width: 100%;
+        height: 1200px;
+        background-color: #1C180D;
+        color: #ffffff;
+        text-align: center;
+        padding: 100px 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .icons-container {
+        display: grid;
+        grid-template-columns: repeat(2, 24rem);
+        row-gap: 10rem;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .card_5 h2 {
+        font-size: 52px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        font-family: Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        color: #FFFFFF;
+    }
+
+    .learn-btn {
+        background-color: transparent;
+        color: #ffffff;
+        border: 1.5px solid #ffffff;
+        border-radius: 25px;
+        padding: 10px 25px;
+        cursor: pointer;
+        font-size: 0.95rem;
+        transition: background 0.3s ease;
+        margin-bottom: 90px;
+        margin-top: 50px;
+    }
+
+    .learn-btn:hover {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    .icons-container p {
+        font-size: 22px;
+        font-family: Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        font-weight: 400;
+    }
+
+    .card_6 {
+        position: relative;
+        width: 100%;
+        height: 950px;
+        background-color: #ccff00;
+        background-size: cover;
+    }
+
+    .card_6 {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    #card6 {
+        width: 500px;
+
+        bottom: 0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: auto;
+    }
+
+    .card_6-content {
+        position: absolute;
+        left: 30rem;
+        top: 2rem;
+        color: #cccccc;
+    }
+
+    .card_6-content h1 {
+        font-size: 52px;
+        font-weight: 400;
+        color: #110E08;
+        font-family: Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+
+    }
+
+    .card_6-content p {
+        color: #110E08;
+        font-size: 16px;
+        font-family: Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        font-weight: 400;
+        position: relative;
+        left: 4rem;
+    }
+
+    .card_6-content a {
+        text-decoration: none;
+        border-radius: 36px;
+        background-color: #110E08;
+        color: #FFF;
+        display: inline-flex;
+        height: 44px;
+        align-items: center;
+        padding: 0px 32px;
+        cursor: pointer;
+        position: relative;
+        left: 6rem;
+        margin: 20px;
+        font-family: Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    }
+
+    .card_7 {
+        position: relative;
+        width: 100%;
+        height: 780px;
+    }
+
+    #video2 {
+        width: 100%;
+    }
+
+    .card_7-content {
+        position: absolute;
+        left: 26rem;
+        top: 15rem;
+        color: #cccccc;
+        text-align: center;
+    }
+
+    .card_7-content h1 {
+        font-size: 72px;
+        font-weight: 400;
+        letter-spacing: -1px;
+        line-height: 78px;
+        color: #FFF;
+
+    }
+
+    .card_7-content a {
+        text-decoration: none;
+        border-radius: 35px;
+        background-color: #CCFF00;
+        height: 44px;
+        padding: 0px 32px;
+        align-items: center;
+        display: inline-flex;
+        color: #000000;
+        font-weight: 400;
+        font-family: Capsule Sans Text, sans-serif;
+    }
+
+   
+/*card8
+--------------------------------------*/
+#card_8 {
+    background-color: #ccff00;
+    height: auto;
+    width: 100%;
+}
+
+#card_8 #top{
+    display: flex;
+    border-bottom: 2px;
+    border-color: gray;
+    height: auto;
+}
+
+#link1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+}
+
+#link1 a {
+    color: black;
+    text-decoration: underline;
+}
+
+#link2 a {
+    color: black;
+    text-decoration: underline;
+}
+
+#divide {
+    padding-top: 1.5rem;
+    color: black;
+    padding-left: 1rem;
+    font-size: 2rem;
+    top: -8rem;
+}
+
+#link2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1.2rem;
+}
+
+#followus {
+    padding-top: 2.2rem;
+    padding-bottom: 2rem;
+    padding-left: 25rem;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+
+}
+
+/* BOTTOM PART*/
+
+.maincontent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    justify-content: space-evenly;
+}
+
+
+#list1 ul {
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    list-style: none;
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+#list1heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 2.4rem;
+    margin-top: 2rem;
+    color: #000000;
+}
+
+#list2 ul {
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    list-style: none;
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+#list2heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 2.4rem;
+    margin-top: 2rem;
+    color: #000000;
+}
+
+#list3 ul {
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    list-style: none;
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+#list3heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 2.4rem;
+    margin-top: 2rem;
+    color: #000000;
+}
+
+#list4 ul {
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    list-style: none;
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+#list4 ul li {
+    margin-top: 1rem;
+    font-size: 1rem;
+    word-spacing: 1%;
+}
+
+#list4heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 2.4rem;
+    margin-top: 2rem;
+    color: #000000;
+}
+
+#logomain {
+    width: 100%;
+}
+
+#logo1 {
+    width: 100%;
+    margin: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 14rem;
+    color: #000000;
+}
+
+@media screen and (max-width: 650px) {
+    #top{
+        display: none;
+    }
+
+    #top {
+        display: flex;
+        gap: 1rem;
+    }
+
+    #lstopbar {
+        color: #000000;
+    }
+
+    .maincontent {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #list1,
+    #list2,
+    #list3,
+    #list4 {
+        margin: 0;
+        padding: 0;
+    }
+
+    #list4 ul,
+    #list2 ul,
+    #list3 ul,
+    #list4 ul {
+        padding: 0;
+        line-height: 1.8rem;
+    }
+
+    #list4 ul li {
+        font-size: 0.9rem;
+    }
+
+    #logo1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1200px) {
+  /* .navbody {
+    width: 50%;
+  } */
+  .card_1-content, .card_2-content, .card_4-content, .card_6-content {
+    left: 5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .menu {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+ 
+  .navbody {
+    display: none; /* hidden on tablet/mobile */
+  } */
+
+  .material-symbols-outlined {
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    font-size: 32px;
+  }
+
+  #logo img {
+    width: 120px;
+  }
+
+  .card_1-content h1 {
+    font-size: 48px;
+    line-height: 50px;
+  }
+
+  .card_2-content, .card_4-content, .card_6-content, .card_3-content {
+    left: 2rem;
+    top: 10rem;
+  }
+
+  .card_6-content h1, .card_7-content h1 {
+    font-size: 40px;
+  }
+
+  #card6 {
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+}
+@media (max-width: 768px) {
+   .navbarright {
+    width: 100%;
+    justify-content: space-between;
+  
+
+  .card_1-content {
+    left: 2rem;
+    top: 6rem;
+  }
+
+  .card_1-content h1 {
+    font-size: 36px;
+  }
+
+  .card_2, .card_3, .card_4, .card_6, .card_7 {
+    height: auto;
+    background-size: cover;
+    padding: 60px 20px;
+  }
+
+  .card_5 {
+    height: auto;
+  }
+
+  .icons-container {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  .maincontent {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+
+  #followus {
+    padding-left: 1rem;
+  }
+ }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .card_1-content h1 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .card_1-content p {
+    font-size: 14px;
+  }
+
+  .card_7-content h1 {
+    font-size: 34px;
+  }
+
+  .learn-btn {
+    font-size: 0.8rem;
+    padding: 8px 18px;
+  }
+
+  #card_8 #top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #list1 ul, #list2 ul, #list3 ul, #list4 ul {
+    line-height: 1.5rem;
+  }
+}
+/* ---------- card_7 RESPONSIVE FIX ---------- */
+.card_7 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#video2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card_7-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  z-index: 2;
+  width: 90%;
+  max-width: 800px;
+}
+
+.card_7-content h1 {
+  font-size: 4vw;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.card_7-content a {
+  text-decoration: none;
+  border-radius: 35px;
+  background-color: #CCFF00;
+  padding: 12px 32px;
+  display: inline-block;
+  color: #000000;
+  font-weight: 500;
+  font-family: "Capsule Sans Text", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card_7-content a:hover {
+  background-color: #a9e000;
+}
+
+/* ---------- RESPONSIVENESS ---------- */
+
+/* Tablets (<= 992px) */
+@media (max-width: 992px) {
+  .card_7-content h1 {
+    font-size: 5vw;
+  }
+
+  .card_7-content a {
+    padding: 10px 28px;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile landscape (<= 768px) */
+@media (max-width: 768px) {
+  .card_7 {
+    height: 80vh;
+  }
+
+  .card_7-content h1 {
+    font-size: 6vw;
+  }
+
+  .card_7-content a {
+    font-size: 0.95rem;
+    padding: 10px 24px;
+  }
+}
+
+/* Mobile portrait (<= 480px) */
+@media (max-width: 480px) {
+  .card_7 {
+    height: 70vh;
+  }
+
+  .card_7-content h1 {
+    font-size: 7vw;
+    line-height: 1.3;
+  }
+
+  .card_7-content a {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+}
